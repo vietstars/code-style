@@ -12,6 +12,6 @@ class ServiceProvider extends BaseServiceProvider
     {
         $this->publishes([
             __DIR__.'/../config/.php-cs-fixer.php' => base_path('.php-cs-fixer.php'),
-        ], 'config');
+        ]);
     }
 }
