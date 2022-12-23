@@ -1,0 +1,33 @@
+{
+    "name": "vietstars/code-style",
+    "description": "PHP PSR code style",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "friendsofphp/php-cs-fixer": "^3.2.0",
+        "illuminate/support": "^7.0|^8.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vietstars\\CodeStyle\\ServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "check-style": "php-cs-fixer fix --dry-run --diff",
+        "fix-style": "php-cs-fixer fix"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vietstars\\CodeStyle\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "VietStars",
+            "email": "vietstar.nt@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
